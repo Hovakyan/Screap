@@ -1,0 +1,5 @@
+#insert into user1(name,surname,age,email)values('vzgo','balabla',27,'aasd@gmail')
+select * from user1;
+#select * from user1 where name = 'Aram'
+update user1 set name = 'asa';
+#delete from user1;
