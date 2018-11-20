@@ -1,6 +1,4 @@
-package Databass;
-import Databass.Screap.Model;
-import Databass.Screap.Overview;
+package Screaping;
 import java.io.IOException;
 
 
