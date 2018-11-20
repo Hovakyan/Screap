@@ -1,6 +1,6 @@
 package Databass;
-import Screap.Model;
-import Screap.Overview;
+import Databass.Screap.Model;
+import Databass.Screap.Overview;
 import java.io.IOException;
 
 
