@@ -11,18 +11,20 @@ package Databass;
 
 
 import Screap.Company;
+import Screap.Model;
 import Screap.Officers;
-import Screaping.scap.Logicaaa;
+import Screap.Overview;
+
+
+import java.io.IOException;
 
 
 public class Main {
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) throws IOException, InterruptedException {
 
-Officers officers = new Officers();
-officers.officerBackup();
-
-
+Model model = new Overview();
+model.overviewAll();
 
 
 
