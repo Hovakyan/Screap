@@ -49,7 +49,7 @@ public class Baza  {
                 pm.setString(9, f.getPeople_Occupation());
 
 
-                pm.execute();
+                pm.executeUpdate();;
             }
             of.clear();
             co.clear();
