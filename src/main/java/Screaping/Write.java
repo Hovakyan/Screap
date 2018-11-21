@@ -5,22 +5,8 @@ import java.io.IOException;
 
 public class Write extends Model {
 
-    @Override
-    public void companyBackup(String kay) throws IOException {
 
-    }
 
-    @Override
-    public void officerBackup(String kay) throws IOException {
-
-    }
-
-    @Override
-    public void overviewAll() throws IOException {
-
-    }
-
-    @Override
     public void writeoffocers(Officers f) throws IOException {
 
         FileWriter writer = new FileWriter("C:/info/out.txt", true);
@@ -55,7 +41,7 @@ public class Write extends Model {
 
     }
 
-    @Override
+
     public void writecompany(Company c) throws IOException {
 
         FileWriter writer = new FileWriter("C:/info/out.txt", true);

@@ -5,36 +5,16 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 
 import java.io.IOException;
+import java.util.List;
+import java.util.Set;
 
 
 public class Officers extends Model {
 
 
-    @Override
-    public void overviewAll() throws IOException {
-
-    }
-
-    @Override
-    public void writecompany(Company c) throws IOException {
-
-    }
-
-    @Override
-    public void writeoffocers(Officers f) throws IOException {
-
-    }
-
-    @Override
-    public void companyBackup(String kay) throws IOException {
-
-    }
+    public static void officerBackup(String kay ,List<Officers> of) throws IOException {
 
 
-    @Override
-    public void officerBackup(String kay) throws IOException {
-
-        Model officers = new Officers();
         String url = "https://beta.companieshouse.gov.uk/company/" + kay + "/officers";
         Document doc = Jsoup.connect(url).get();
         Element elcount = doc.getElementById("company-appointments");
@@ -47,8 +27,12 @@ public class Officers extends Model {
         } catch (Error | Exception e) {
 
         }
+        Officers officers = new Officers();
 
         for (int i = 1; i <= count; i++) {
+            of.add(officers);
+
+
             try {
                 Element name = doc.getElementById("officer-name-" + i);
                 officers.setPeople_Name(name.text());
@@ -100,9 +84,6 @@ public class Officers extends Model {
             }
 
 
-            Model write = new Write();
-            write.writeoffocers((Officers) officers);
         }
-
     }
 }

@@ -3,48 +3,37 @@ package Screaping;
 import java.io.*;
 import java.util.*;
 
-public class Overview extends Model {
-
-    @Override
-    public void writecompany(Company c) throws IOException {
-
-    }
-
-    @Override
-    public void writeoffocers(Officers f) throws IOException {
-
-    }
-
-    @Override
-    public void companyBackup(String kay) throws IOException {
-
-    }
 
 
-    @Override
-    public void officerBackup(String kay) throws IOException {
 
-    }
-    @Override
-    public void overviewAll() throws IOException {
+public class Overview  extends Model{
+
+
+
+
+
+    public static void  overviewAll() throws IOException {
+
+        List<Officers> officersarr = new ArrayList<Officers>();
+        List<Company> companyarr = new ArrayList<Company>();
+
 
         BufferedReader bufferedReader = new BufferedReader(new FileReader("C:/info/info1.txt"));
         Scanner scanner = null;
         try {
             scanner = new Scanner(bufferedReader);
 
+            Model of = new Officers();
          while (scanner.hasNextLine()) {
             String x = scanner.nextLine();
+            Company.companyBackup(x,companyarr);
+            Officers.officerBackup(x,officersarr);
+            Baza.bazacf(officersarr,companyarr);
+         }
 
-                Model company = new Company();
-                company.companyBackup(x);
-
-                Thread.sleep(1000);
-                Model officers = new Officers();
-                officers.officerBackup(x);
-          }
 
         } catch (Exception e) {
+
 
         }
 

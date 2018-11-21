@@ -1,8 +1,13 @@
 package Screaping;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
-public abstract class Model {
+public  class Model {
+
+
+
 
 
     private  String companyName;
@@ -24,12 +29,6 @@ public abstract class Model {
     private  String people_Country_of_residence;
     private  String people_Occupation;
 
-
-    public  abstract void companyBackup(String kay ) throws IOException;
-    public  abstract void officerBackup(String kay) throws IOException;
-    public  abstract void overviewAll() throws IOException, InterruptedException;
-    public  abstract void writecompany(Company c) throws IOException;
-    public  abstract void writeoffocers(Officers f) throws IOException;
 
 
 
