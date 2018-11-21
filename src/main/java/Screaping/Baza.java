@@ -51,15 +51,15 @@ public class Baza  {
 
                 pm.execute();
             }
-
+            of.clear();
+            co.clear();
             }  catch(ClassNotFoundException e){
                 e.printStackTrace();
             } catch(SQLException e){
                 e.printStackTrace();
             }
 
-        of.clear();
-        co.clear();
+
         System.out.println("finish");
     }
 
