@@ -39,7 +39,7 @@ public class Baza  {
                     of) {
                 PreparedStatement pm = con.prepareStatement("INSERT into officers values  (?,?,?,?,?,?,?,?,?)");
                 pm.setString(1, co.get(0).getCompanyName());
-                pm.setString(2,  f.getPeople_Name());
+                pm.setString(2, f.getPeople_Name());
                 pm.setString(3, f.getPeople__Adres());
                 pm.setString(4, f.getPeople_Role());
                 pm.setString(5, f.getPeople_Date_of_birth());
