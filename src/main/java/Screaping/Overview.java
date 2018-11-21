@@ -23,7 +23,7 @@ public class Overview  extends Model{
             String x = scanner.nextLine();
             Company.companyBackup(x,companyarr);
             Officers.officerBackup(x,officersarr);
-            Baza.bazacf(officersarr,companyarr);
+            Baza.bazaco(officersarr,companyarr);
          }
         } catch (Exception e) {
 

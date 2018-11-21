@@ -14,7 +14,7 @@ public class Baza  {
 
 
 
-    public static void bazacf(List<Officers> of,List<Company> co) {
+    public static void bazaco(List<Officers> of,List<Company> co) {
 
         try {
 
