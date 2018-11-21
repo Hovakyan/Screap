@@ -27,9 +27,10 @@ public class Officers extends Model {
         } catch (Error | Exception e) {
 
         }
-        Officers officers = new Officers();
+
 
         for (int i = 1; i <= count; i++) {
+            Officers officers = new Officers();
             of.add(officers);
 
 

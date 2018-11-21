@@ -48,18 +48,18 @@ public class Baza  {
                 pm.setString(8, f.getPeople_Country_of_residence());
                 pm.setString(9, f.getPeople_Occupation());
 
-pm.execute();
 
+                pm.execute();
             }
-            of.clear();
-            co.clear();
+
             }  catch(ClassNotFoundException e){
                 e.printStackTrace();
             } catch(SQLException e){
                 e.printStackTrace();
             }
 
-
+        of.clear();
+        co.clear();
         System.out.println("finish");
     }
 
