@@ -5,7 +5,7 @@ import java.io.IOException;
 
 public class Write extends Model {
 
-
+//TODO sa ogtagorcvelu e output txt i depqum:
 
     public void writeoffocers(Officers f) throws IOException {
 

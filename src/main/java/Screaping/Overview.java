@@ -8,6 +8,7 @@ import java.util.*;
 
 public class Overview  extends Model{
 
+    // TODO anhrajesht e BufferedReader i hasceov unenal txt doc url i verjin ID nerov:
 
     public static void  overviewAll() throws IOException {
 
